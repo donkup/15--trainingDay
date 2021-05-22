@@ -1,0 +1,25 @@
+
+
+VALIDACIJOS
+
+ar validus:
+- email
+- name
+- message
+- phone number
+- month name
+- weekday name
+- person ID (asmenskodas)
+
+naudojame OOP
+kiek imanoma optimizuoti - pasistengti nerasyti tu paciu validaciju skirtingose vietose
+
+
+class Validation(){
+method1 () {}
+method2 () {}
+method3 () {}
+}
+
+const v = new Validation();
+
