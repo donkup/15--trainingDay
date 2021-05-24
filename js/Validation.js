@@ -1,21 +1,37 @@
 class Validation {
-    isValidFirstName() {
+    isValidFirstName(firstName) {
+        if (!this.isValidMessage(firstName)) {
+            return false;
+        }
         return true;
     }
 
-    isValidLastName() {
+    isValidLastName(lastName) {
+        if (!this.isValidMessage(lastName)) {
+            return false;
+        }
         return true;
     }
 
-    isValidEmail() {
+
+
+    isValidEmail(email) {
+        return true;
+
+    }
+
+    isValidMessage(message) {
+        if (typeof message !== 'string' || message === '') {
+            return false;
+        }
+
         return true;
     }
 
-    isValidMessage() {
-        return true;
-    }
-
-    isValidPhoneNumber() {
+    isValidPhoneNumber(phoneNumber) {
+        if (typeof phoneNumber !== 'number' || phoneNumber === '') {
+            return false;
+        }
         return true;
     }
 
