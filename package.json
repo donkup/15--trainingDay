@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "nodemon .",
-    "test": "jest --watchAll"
+    "test": "jest --watchAll --collectCoverage"
   },
   "author": "",
   "license": "MIT"
